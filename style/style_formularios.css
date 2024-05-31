@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: gray;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+form label{
+    display: block;
+    align-items: center;
+    font-size: 20px;
+    margin: 10px 0px 0px 0px;
+}
+
+placeholder-shown{
+    font-size: 10px;
+
+}
+
+form fieldset{
+    margin: 25px 0 0 0;
+}
+
+form legend{
+    font-size: 20px;
+    font-weight: bold;
+}   
+
+
+.input-padrao{
+    display: block;
+    font-size: 20px;
+    padding: 10px 10px;
+    width: 50%;
+    cursor: pointer;
+    margin: 10px 0px 25px 0px;
+}
+
+.input-padrao:placeholder-shown{
+    display: block;
+    color: orangered;
+    
+}
+
+
+.select{
+    display: block;
+    font-size: 20px;
+    padding: 10px 10px;
+    width: 25%;
+    cursor: pointer;
+    margin: 10px 0px 25px 0px;
+}
+.data{
+    display: block;
+    font-size: 20px;
+    padding: 10px 10px;
+    width: 50%;
+    cursor: pointer;
+    margin: 10px 0px 25px 0px;
+}
+
+.horario{
+    display: block;
+    font-size: 20px;
+    padding: 10px 10px;
+    width: 50%;
+    cursor: pointer;
+    margin: 10px 0px 25px 0px;
+}
+
+.label-dot{
+    align-items: center;
+    font-size: 10px;   
+    margin: 0px 0px 0px 0px;
+}
+
+.enviar{
+    color: black;
+    width: 50%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px ;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+.enviar:hover{
+    background-color: orange;
+    transform: scale(1.05);
+}
+
+.salvar{
+    color: black;
+    width: 25%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px ;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 25px 10px 0 10px;
+}
+.salvar:hover{
+    background-color: orange;
+    transform: scale(1.05);
+}
+
+.voltar{
+    color: black;
+    width: 25%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px ;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 25px 10px 0 10px;
+}
+.voltar:hover{
+    background-color: orange;
+    transform: scale(1.05);
+}
