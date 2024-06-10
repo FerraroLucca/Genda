@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cadastro de endereço</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style/style.css"/>
+    <script src="./Js/app.js" type="module"></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+
+    <!-- Código da API do Maps -->
+
+    <gmpx-api-loader key="AIzaSyDUpPyn9YfwADKY0prp0mK1Dz6OVdkL_Os" solution-channel="GMP_QB_addressselection_v3_cABC">
+    </gmpx-api-loader>
+    <gmpx-split-layout row-layout-min-width="600">
+      <div class="panel" slot="fixed">
+        <div>
+          <img class="sb-title-icon" src="https://fonts.gstatic.com/s/i/googlematerialicons/location_pin/v5/24px.svg" alt="">
+          <span class="sb-title">Cadastro de endereço</span>
+        </div>
+        <input type="text" placeholder="Endereço" id="location-input"/>
+        <input type="text" placeholder="Apt, Suite, unidade etc (optional)"/>
+        <input type="text" placeholder="Cidade" id="locality-input"/>
+        <div class="half-input-container">
+          <input type="text" class="half-input" placeholder="Estado" id="administrative_area_level_1-input"/>
+          <input type="text" class="half-input" placeholder="CEP" id="postal_code-input"/>
+        </div>
+        <input type="text" placeholder="País" id="country-input"/>
+
+
+
+
+<!-- ComboBox -->
+
+    <div class="select">
+      <div id="category-select">
+          <label for="options-view-button">Categoria</label>
+          <input type="checkbox" id="options-view-button">
+  
+          <div id="select-button">
+              <div id="selected-value">Selecione a categoria</div>
+  
+              <div id="chevrons"> 
+                  <i data-lucide="chevron-down"></i>
+                  <i data-lucide="chevron-up"></i>
+              </div>
+          </div>        
+      </div>
+
+      <ul id="options">
+          <li class="option"> 
+              <input
+              type="radio"
+              name="category"
+              value="food"
+              data-label="Comer e beber"
+              >
+
+              <i data-lucide="utensils"></i>
+              <span class="label">Comer e beber</span>
+              <i data-lucide="check"></i>
+          </li>
+
+          <li class="option"> 
+              <input
+              type="radio"
+              name="category"
+              value="shop"
+              data-label="Compras"
+              >
+
+              <i data-lucide="shopping-cart"></i>
+              <span class="label">Compras</span>
+              <i data-lucide="check"></i>
+          </li>
+
+          <li class="option"> 
+              <input
+              type="radio"
+              name="category"
+              value="service"
+              data-label="Serviços"
+              >
+
+              <i data-lucide="armchair"></i>
+              <span class="label">Serviços</span>
+              <i data-lucide="check"></i>
+          </li>
+
+          <li class="option"> 
+              <input
+              type="radio"
+              name="category"
+              value="hotel"
+              data-label="Hotéis e hospedagem"
+              >
+
+              <i data-lucide="bed"></i>
+              <span class="label">Hotéis e hospedagem</span>
+              <i data-lucide="check"></i>
+          </li>
+
+          <li class="option"> 
+              <input
+              type="radio"
+              name="category"
+              value="activity"
+              data-label="Atividades e recreação ao ar livre"
+              >
+
+              <i data-lucide="tree-pine"></i>
+              <span class="label">Atividades e recreação ao ar livre</span>
+              <i data-lucide="check"></i>
+          </li>
+
+          <li class="option"> 
+              <input
+              type="radio"
+              name="category"
+              value="religion"
+              data-label="Religião"
+              >
+
+              <i data-lucide="church"></i>
+              <span class="label">Religião</span>
+              <i data-lucide="check"></i>
+          </li>
+      </ul>
+  </div>
+  
+  <!-- Botão de Input - Resto do código do Maps -->
+  <gmpx-icon-button variant="filled">Cadastrar</gmpx-icon-button>
+</div>
+<gmp-map slot="main">
+  <gmp-advanced-marker></gmp-advanced-marker>
+</gmp-map>
+</gmpx-split-layout>
+
+
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="index.js"></script>
+  </body>
+</html>
