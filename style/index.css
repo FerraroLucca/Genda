@@ -1,17 +1,21 @@
+:root{
+    --branco:#FAFAFA;
+    --preto:#202020;
+    --laranja:#DF6F3E;
+    --laranja-escuro:#CF5E2C;
+    --azul:#215454;
+    --azul-escuro:#214545;
+}
+
 h1{
-    color: green;
+    color: var(--preto);
 }
 
 body{
-    color: green;
-    background-color: black;
+    color: var(--laranja-escuro);
+    background-color: var(--branco);
 }
 
 a{
-    color: white;
-}
-
-script .alert{
-    background-color: red;
-    color: white;
+    color: var(--preto);
 }
