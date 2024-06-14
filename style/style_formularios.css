@@ -55,27 +55,25 @@ main{
 form label{
     display: block;
     align-items: center;
-    font-size: 1.3em;
-    margin: 0.4em 0.1em;
+    font-size: 1.5em;
+    margin: 0.4em 0.1em 0.5em 0;
 }
 
 form fieldset{
     margin: 1.5em 0 0 0;
     padding: 1em;
     border: 0.1em solid var(--azul);
-
 }
 
 form legend{
     font-size: 1.5em;
     font-weight: bold;
-    
 }   
 
 .input-padrao{
     display: block;
-    font-size: 20px;
-    padding: 10px 10px;
+    font-size: 1em;
+    padding: 1em 1em;
     width: 80%;
     cursor: pointer;
     margin: 1em 0 1.5em 0;
@@ -89,39 +87,45 @@ form legend{
 
 .select{
     display: block;
-    font-size: 20px;
-    padding: 10px 10px;
+    font-size: 1em;
+    padding: 1em 1em;
     width: 40%;
     cursor: pointer;
-    margin: 10px 0px 25px 0px;
+    margin: 1em 0 1.5em 0;
 }
+
 .data{
     display: block;
-    font-size: 20px;
-    padding: 10px 10px;
-    width: 50%;
+    font-size: 1.5em;
+    padding: 1em 1em;
+    width: 40%;
     cursor: pointer;
-    margin: 10px 0px 25px 0px;
+    margin: 1em 0 1.5em 0;
 }
 
 .horario{
     display: block;
-    font-size: 20px;
-    padding: 10px 10px;
-    width: 50%;
+    font-size: 1.5em;
+    padding: 1em 1em;
+    width: 40%;
     cursor: pointer;
-    margin: 10px 0px 25px 0px;
+    margin: 1em 0 1.5em 0;
+}
+
+.option{
+    font-size: 1em;
+    margin: 1em 0 1.5em 0;
 }
 
 .label-dot{
     align-items: center;
-    font-size: 10px;   
-    margin: 0px 0px 0px 0px;
+    font-size: 1em; 
+    margin: 0.5em; 
 }
 
 .enviar{
     color: black;
-    width: 50%;
+    width: 40%;
     padding: 20px;
     border: none;
     border-radius: 10px ;
@@ -143,7 +147,7 @@ form legend{
     font-weight: bold;
     font-size: 15px;
     cursor: pointer;
-    margin: 25px 10px 0 10px;
+    margin: 1em 0 1.5em 0;
 }
 .salvar:hover{
     background-color: orangered;
