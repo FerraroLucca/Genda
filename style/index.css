@@ -29,13 +29,13 @@ main {
     width: 35%;
 }
 
-.titulo {
-    font-size: 70px;
+.enda {
+    font-size: 4em;
     color: #FAFAFA;
 }
 
 .logo__titulo {
-    margin: 0px 30px;
+    margin: 0 1.5em;
     display: flex;
     align-items: center;
 }

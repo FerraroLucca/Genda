@@ -7,11 +7,40 @@
     --azul-escuro:#214245;
 }
 
+header{
+    background-color: var(--azul-escuro); 
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2em;
+}
+
+.logo {
+    width: 35%;
+}
+
+.enda {
+    font-size: 4em;
+    color: #FAFAFA;
+}
+
+.logo__titulo {
+    margin: 0 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 1em;
+    margin: 2em;
     color: var(--laranja);
     background-color: #214245;
+}
+
+.titulo {
+    color: var(--laranja);
+    font-size: 2em;
+    margin-bottom: 1em;
 }
 
 a{
@@ -20,15 +49,14 @@ a{
 }
 
 main{
-    width: 1000px;
-    margin: 0 auto;
+    margin: 1em 3em;
 }
 
 form label{
     display: block;
     align-items: center;
     font-size: 20px;
-    margin: 10px 0px 0px 0px;
+    margin: 0.4em 0.1em;
 }
 
 placeholder-shown{
@@ -38,13 +66,19 @@ placeholder-shown{
 
 form fieldset{
     margin: 25px 0 0 0;
+    padding: 1em;
+    border: 0.1em solid var(--azul);
+
 }
 
 form legend{
     font-size: 20px;
     font-weight: bold;
+    
 }   
 
+.legenda {
+}
 
 .input-padrao{
     display: block;

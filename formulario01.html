@@ -10,11 +10,14 @@
 
 <body>
     <header>
+        <div class="logo__titulo">
+            <img class="logo" src="./IMG/Genda-logo.png" alt="">
+            <h1 class="enda">ENDA</h1>
+        </div>
     </header>
-    
-    <main>
-        <h1>Formulário de Cadastro de Eventos</h1>
         
+    <main>
+        <h1 class="titulo">Formulário de Cadastro de Eventos</h1>
         <form action="/submit-event" method="POST">
             <label for="nome-evento">Qual o nome do evento?</label>
             <input type="text" id="nome-evento" class="input-padrao" required>
@@ -102,7 +105,8 @@
             <label for="event-speakers">Quais serão os principais palestrantes ou atrações do evento?</label>
             <textarea id="event-speakers" name="event_speakers" cols="30" rows="10" class="input-padrao" required></textarea>   
                 
-            <button type="submit" value="Cadastrar evento" class="enviar">Cadastrar Evento</button>
+            <button type="button" class="voltar"><a href="index.html">Voltar pro menu</a></button> 
+            <button type="button" class="salvar" onclick="alert('Cadastrado')">Cadastrar Evento</button>
         </form>
     </main>
 
