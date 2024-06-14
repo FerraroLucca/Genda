@@ -96,7 +96,7 @@ form legend{
     cursor: pointer;
 }
 .enviar:hover{
-    background-color: orange;
+    background-color: orangered;
     transform: scale(1.05);
 }
 
@@ -112,7 +112,7 @@ form legend{
     margin: 25px 10px 0 10px;
 }
 .salvar:hover{
-    background-color: orange;
+    background-color: orangered;
     transform: scale(1.05);
 }
 
@@ -129,6 +129,6 @@ form legend{
     margin: 25px 10px 0 10px;
 }
 .voltar:hover{
-    background-color: orange;
+    background-color: orangered;
     transform: scale(1.05);
 }
