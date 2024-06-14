@@ -4,18 +4,123 @@
     --laranja:#DF6F3E;
     --laranja-escuro:#CF5E2C;
     --azul:#215454;
-    --azul-escuro:#214545;
+    --azul-escuro:#214245;
 }
 
-h1{
-    color: var(--preto);
+header{
+    background-color: var(--azul-escuro); 
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 body{
-    color: var(--laranja-escuro);
     background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
-a{
-    color: var(--preto);
+main {
+    flex: 1 1 0;
 }
+
+.logo {
+    width: 35%;
+}
+
+.titulo {
+    font-size: 70px;
+    color: #FAFAFA;
+}
+
+.logo__titulo {
+    margin: 0px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.navegacao {
+    margin: 0px 30px;
+}
+
+.formulario__botoes {
+    text-decoration: none;
+    display: inline-block;
+    margin: 1.5em;
+}
+
+.formulario__links {
+    font-size: 30px;
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.formulario__links:hover {
+    color: var(--laranja);
+    text-decoration: underline;
+}
+
+p{
+    font-size: 10em;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--azul-escuro); 
+    align-items: center;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.rodape__titulo {
+    font-size: 2em;
+    margin: 0.5em;
+    color: var(--branco);
+}
+
+.rodape__nome{
+    font-size: 1.3em;
+}
+
+.rodape__navegacao {
+    color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.rodape__desenvolvedores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape__lista {
+    align-items: center;
+}
+
+.rodape__botao{
+    margin: 0.5em;
+}
+
+.rodape__linkedin{
+    width: 1em;
+}
+
+.rodape__github{
+    width: 1em;
+}
+
+.rodape__link{
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.rodape__link:hover{
+    color: var(--laranja-escuro);
+}
+

@@ -1,8 +1,17 @@
+:root{
+    --branco:#FAFAFA;
+    --preto:#202020;
+    --laranja:#DF6F3E;
+    --laranja-escuro:#CF5E2C;
+    --azul:#215454;
+    --azul-escuro:#214245;
+}
+
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: gray;
-    color: white;
+    margin: 1em;
+    color: var(--laranja);
+    background-color: #214245;
 }
 
 a{
