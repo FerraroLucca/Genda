@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Grupos</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style_formularios.css">
+    <style>
+        /* Adicione estilos personalizados aqui, se necessário */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo__titulo">
+            <img class="logo" src="./IMG/Genda-logo.png" alt="">
+            <h1 class="enda">ENDA</h1>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="titulo">Cadastro de Grupos</h1>
+
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend>Informações do Grupo</legend>
+                
+                <label for="nome-grupo">Nome do Grupo:</label>
+                <input type="text" id="nome-grupo" name="nome-grupo" class="input-padrao" placeholder="Nome do grupo" required>
+                
+                <label for="categoria-grupo">Categoria do Grupo:</label>
+                <select id="categoria-grupo" name="categoria-grupo" class="select" required>
+                    <option value="">Selecione uma categoria</option>
+                    <option value="religioso">Religioso</option>
+                    <option value="social-lazer">Social/Lazer</option>
+                    <option value="esporte">Esporte</option>
+                    <option value="outro">Outro</option>
+                </select>
+                
+                <label for="detalhes-grupo">Detalhes do Grupo:</label>
+                <textarea id="detalhes-grupo" name="detalhes-grupo" cols="30" rows="10" class="input-padrao" required></textarea>
+                
+                <!-- Tabela de participantes -->
+                <label>Participantes do Grupo:</label>
+                <table class="tabela">
+                    <thead class="tabela__titulo">
+                        <tr>
+                            <th class="tupla">Nome do Integrante</th>
+                            <th class="tupla">Data de Entrada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tabela__campos">
+                            <td class="tupla">João Silva</td>
+                            <td class="tupla">2022-01-15</td>
+                        </tr>
+                        <tr class="tabela__campos">
+                            <td class="tupla">Carol Silva</td>
+                            <td class="tupla">2022-01-15</td>
+                        </tr>
+                        <tr class="tabela__campos">
+                            <td class="tupla">Antonia Souza</td>
+                            <td class="tupla">2022-01-15</td>
+                        </tr>
+                        <!-- Adicione mais linhas conforme necessário -->
+                    </tbody>
+                </table>
+            </fieldset>
+
+            <div class="botoes">
+                <a href="index.html" class="voltar">Voltar para o menu</a>
+                <button type="button" class="salvar" onclick="alert('Participando')">Participar do Grupo</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+</html>
