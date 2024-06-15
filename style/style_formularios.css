@@ -146,6 +146,7 @@ form legend{
 
 .botoes__navegacao{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -167,11 +168,8 @@ form legend{
 }
 
 .voltar{
-    color: black;
-    width: 40%;
-    padding: 20px;
+    color: var(--branco);
     border: none;
-    border-radius: 10px ;
     font-weight: bold;
     font-size: 15px;
     text-decoration: none;
@@ -179,7 +177,7 @@ form legend{
     margin: 2em 1em 0 1em;
 }
 .voltar:hover{
-    background-color: var(--laranja-escuro);
+    color: var(--laranja-escuro);
     transform: scale(1.05);
 }
 

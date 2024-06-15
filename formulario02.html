@@ -6,14 +6,18 @@
     <title>Cadastro de Eventos</title>
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style_formularios.css">
+    <style>
+        /* Adicione estilos personalizados aqui, se necessário */
+    </style>
 </head>
 
 <body>
     <header>
-        <div><a href="index.html"  class="logo__titulo">
-            <img class="logo" src="./IMG/Genda-logo.png" alt="">
-            <h1 class="enda">ENDA</h1>
-        </a>
+        <div class="logo__titulo">
+            <a href="index.html">
+                <img class="logo" src="./IMG/Genda-logo.png" alt="Logo Genda">
+                <h1 class="enda">ENDA</h1>
+            </a>
         </div>
     </header>
         
@@ -21,12 +25,11 @@
         <h1 class="titulo">Formulário de cadastro de eventos</h1>
         <form action="/submit-event" method="POST">
             <label for="nome-evento">Qual o nome do evento?</label>
-            <input type="text" id="nome-evento" class="input-padrao" required>
-
-
-            <label>Qual a categoria do evento?</label>
-            <select id="event-category" class="select" required>
-                <option value="">Selecione uma opção</option>
+            <input type="text" id="nome-evento" name="nome-evento" class="input-padrao" required>
+            
+            <label for="event-category">Qual a categoria do evento?</label>
+            <select id="event-category" name="event-category" class="select" required>
+                <option value="" disabled selected>Selecione uma categoria</option>
                 <option value="Conferência">Conferência</option>
                 <option value="Workshop">Workshop</option>
                 <option value="Palestra">Palestra</option>
@@ -34,80 +37,67 @@
                 <option value="Encontro-de-Clubes">Encontro de clubes</option>
                 <option value="Outro">Outro</option>
             </select>
-        
-
-            <label>Onde será realizado o evento?</label>
-                <select id="event-location" name="event_location" class="select" required>
-                    <option value="">Selecione um local</option>
-                    <option value="Restaurante">Restaurante</option>
-                    <option value="Biblioteca">Biblioteca</option>
-                    <option value="Cinema">Cinema</option>
-                    <option value="Auditório">Auditório</option>
-                    <option value="Parque">Parque</option>
-                    <option value="Outro">Outro</option>
+            
+            <label for="event-location">Onde será realizado o evento?</label>
+            <select id="event-location" name="event-location" class="select" required>
+                <option value="" disabled selected>Selecione um local</option>
+                <option value="Restaurante">Restaurante</option>
+                <option value="Biblioteca">Biblioteca</option>
+                <option value="Cinema">Cinema</option>
+                <option value="Auditório">Auditório</option>
+                <option value="Parque">Parque</option>
+                <option value="Outro">Outro</option>
             </select>
             
-
-            <label for="data">Qual a data do evento?</label>
-            <input type="date" id="event-date" class="data" required>
+            <label for="event-date">Qual a data do evento?</label>
+            <input type="date" id="event-date" name="event-date" class="data" required>
             
-
-            <label for="inicio">Qual o horário de início do evento?</label>
-            <input type="time" id="event-start-time" class="horario" required>
-        
-
-            <label for="encerramento">Qual o horário de término do evento?</label>
-            <input type="time" id="event-end-time" class="horario" required>
-        
-
-            <label for="organizador">Quem é o organizador do evento?</label>
-            <input type="text" id="event-organizer" class="input-padrao" required>
-        
-
-            <label for="descricao">Qual é a descrição do evento?</label>
-            <textarea id="event-description" cols="30" rows="10" class="input-padrao" required></textarea>
-        
-
-            <label for="participantes">Quantas pessoas são esperadas para o evento?</label>
-            <input type="number" id="event-participants" class="input-padrao" required>
-
-
-            <label for="registro-previo">Haverá inscrição prévia para participar do evento?</label>
-                <select id="event-registration" class="select" required>
-                    <option value="Sim">Sim</option>
-                    <option value="Não">Não</option>
-                </select>
+            <label for="event-start-time">Qual o horário de início do evento?</label>
+            <input type="time" id="event-start-time" name="event-start-time" class="horario" required>
             
-
-            <label for="registro-requisitos">Quais são os requisitos para inscrição?</label>
-            <textarea id="registration-requirements" cols="30" rows="10" class="input-padrao" required></textarea>
-
-
+            <label for="event-end-time">Qual o horário de término do evento?</label>
+            <input type="time" id="event-end-time" name="event-end-time" class="horario" required>
+            
+            <label for="event-organizer">Quem é o organizador do evento?</label>
+            <input type="text" id="event-organizer" name="event-organizer" class="input-padrao" required>
+            
+            <label for="event-description">Qual é a descrição do evento?</label>
+            <textarea id="event-description" name="event-description" cols="30" rows="10" class="input-padrao" required></textarea>
+            
+            <label for="event-participants">Quantas pessoas são esperadas para o evento?</label>
+            <input type="number" id="event-participants" name="event-participants" class="input-padrao" required>
+            
+            <label for="event-registration">Haverá inscrição prévia para participar do evento?</label>
+            <select id="event-registration" name="event-registration" class="select" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+            </select>
+            
+            <label for="registration-requirements">Quais são os requisitos para inscrição?</label>
+            <textarea id="registration-requirements" name="registration-requirements" cols="30" rows="10" class="input-padrao" required></textarea>
             
             <label>Haverá valor de inscrição?</label>
-            <label for="Sim"><input type="radio" name="taxa" value="Sim" id="radio-taxa-sim" class="label-dot" checked>Sim</label>
-            <label for="Não"><input type="radio" name="taxa" value="Não" id="radio-taxa-nao" class="label-dot" checked>Não</label>
-
-
-            <label>Haverá distribuição de brindes ou materiais promocionais?</label>
-            <label for="Sim"><input type="radio" name="brindes" value="Sim" id="radio-brinde-sim" class="label-dot" checked>Sim</label>
-            <label for="Não"><input type="radio" name="brindes" value="Não" id="radio-brinde-nao" class="label-dot" checked>Não</label>
-    
-
-            <label>Alimentação</label>
-                <select id="alimentação" name="event_food" class="select" required>
-                    <option value="">Selecione uma opção</option>
-                    <option value="sim-inclusa">Valor da alimentação incluso na taxa de inscrição</option>
-                    <option value="sim-produto-local">Possibilidade de consumo dos alimentos do local</option>
-                    <option value="nao-permitida">Não é permitido comer no local</option>
-                </select>
+            <label for="radio-taxa-sim"><input type="radio" id="radio-taxa-sim" name="taxa" value="Sim" class="label-dot" checked>Sim</label>
+            <label for="radio-taxa-nao"><input type="radio" id="radio-taxa-nao" name="taxa" value="Não" class="label-dot">Não</label>
             
-
+            <label>Haverá distribuição de brindes ou materiais promocionais?</label>
+            <label for="radio-brinde-sim"><input type="radio" id="radio-brinde-sim" name="brindes" value="Sim" class="label-dot" checked>Sim</label>
+            <label for="radio-brinde-nao"><input type="radio" id="radio-brinde-nao" name="brindes" value="Não" class="label-dot">Não</label>
+            
+            <label for="alimentacao">Alimentação</label>
+            <select id="alimentacao" name="alimentacao" class="select" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="sim-inclusa">Valor da alimentação incluso na taxa de inscrição</option>
+                <option value="sim-produto-local">Possibilidade de consumo dos alimentos do local</option>
+                <option value="nao-permitida">Não é permitido comer no local</option>
+            </select>
+            
             <label for="event-speakers">Quais serão os principais palestrantes ou atrações do evento?</label>
-            <textarea id="event-speakers" name="event_speakers" cols="30" rows="10" class="input-padrao" required></textarea>   
-                
+            <textarea id="event-speakers" name="event-speakers" cols="30" rows="10" class="input-padrao" required></textarea>
+            
             <div class="botoes">
-                <button type="button" class="voltar"><a href="index.html">Voltar pro menu</a></button> 
+                <a href="index.html" class="voltar">Voltar para o menu</a>
                 <button type="button" class="salvar" onclick="alert('Cadastrado')">Cadastrar Evento</button>
             </div>
         </form>
