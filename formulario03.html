@@ -1,150 +1,79 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Cadastro de endereço</title>
-    <meta charset="utf-8">
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro de Endereço</title>
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style_formularios.css">
-    <script src="./Js/app.js" type="module"></script>
-    <script src="index.js" defer></script>
-  </head>
-  <body>
+</head>
+<body>
 
-    <!-- Código da API do Maps -->
-
-    <gmpx-api-loader key="AIzaSyDUpPyn9YfwADKY0prp0mK1Dz6OVdkL_Os" solution-channel="GMP_QB_addressselection_v3_cABC">
-    </gmpx-api-loader>
-    <gmpx-split-layout row-layout-min-width="600">
-      <div class="panel" slot="fixed">
-        <div>
-          <img class="sb-title-icon" src="https://fonts.gstatic.com/s/i/googlematerialicons/location_pin/v5/24px.svg" alt="">
-          <span class="sb-title">Cadastro de endereço</span>
+    <header>
+        <div class="logo__titulo">
+            <img class="logo" src="./IMG/Genda-logo.png" alt="">
+            <h1 class="enda">ENDA</h1>
         </div>
-        <input type="text" placeholder="Endereço" id="location-input"/>
-        <input type="text" placeholder="Apt, Suite, unidade etc (optional)"/>
-        <input type="text" placeholder="Cidade" id="locality-input"/>
-        <div class="half-input-container">
-          <input type="text" class="half-input" placeholder="Estado" id="administrative_area_level_1-input"/>
-          <input type="text" class="half-input" placeholder="CEP" id="postal_code-input"/>
-        </div>
-        <input type="text" placeholder="País" id="country-input"/>
+    </header>
 
+    <main>
+        <h1 class="titulo">Cadastro de Endereço</h1>
+        
+        <form action="/submit-endereco" method="post">
+            <fieldset>
+                <legend class="legenda">Informações do local</legend>
+                
+                <label for="ambiente">Nome do estabelecimento:</label>
+                <input type="text" id="ambiente" name="ambiente" class="input-padrao" placeholder="Nome do estabelecimento" required>
 
+                <label for="nome">Nome do proprietário:</label>
+                <input type="text" id="nome" name="nome" class="input-padrao" placeholder="Nome do proprietário" required>
 
+                <label for="telefone">Telefone do estabelecimento:</label>
+                <input type="tel" id="telefone" name="telefone" class="input-padrao" placeholder="Telefone do estabelecimento" required>
+            </fieldset>
 
-<!-- ComboBox -->
+            <fieldset>
+                <legend class="legenda">Endereço</legend>
+                
+                <label for="rua">Logradouro:</label>
+                <input type="text" id="rua" name="rua" class="input-padrao" placeholder="Nome" required>
 
-    <div class="select">
-      <div id="category-select">
-          <label for="options-view-button">Categoria</label>
-          <input type="checkbox" id="options-view-button">
-  
-          <div id="select-button">
-              <div id="selected-value">Selecione a categoria</div>
-  
-              <div id="chevrons"> 
-                  <i data-lucide="chevron-down"></i>
-                  <i data-lucide="chevron-up"></i>
-              </div>
-          </div>        
-      </div>
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" name="numero" class="input-padrao" placeholder="Numeração do local" required>
 
-      <ul id="options">
-          <li class="option"> 
-              <input
-              type="radio"
-              name="category"
-              value="food"
-              data-label="Comer e beber"
-              >
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="complemento" name="complemento" class="input-padrao" placeholder="Complemento se houver">
 
-              <i data-lucide="utensils"></i>
-              <span class="label">Comer e beber</span>
-              <i data-lucide="check"></i>
-          </li>
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" class="input-padrao" placeholder="Bairro" required>
 
-          <li class="option"> 
-              <input
-              type="radio"
-              name="category"
-              value="shop"
-              data-label="Compras"
-              >
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" class="input-padrao" placeholder="Cidade" required>
 
-              <i data-lucide="shopping-cart"></i>
-              <span class="label">Compras</span>
-              <i data-lucide="check"></i>
-          </li>
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" class="input-padrao" placeholder="Estado" required>
 
-          <li class="option"> 
-              <input
-              type="radio"
-              name="category"
-              value="service"
-              data-label="Serviços"
-              >
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" class="input-padrao" placeholder="apenas os digitos do CEP" required>
+            </fieldset>
 
-              <i data-lucide="armchair"></i>
-              <span class="label">Serviços</span>
-              <i data-lucide="check"></i>
-          </li>
+            <fieldset>
+                <label for="categoria">Selecione a categoria:</label>
+                <select id="categoria" name="categoria" class="select">
+                    <option>Selecione</option> 
+                    <option value="Comes">Comer e beber</option>
+                    <option value="Compras">Compras</option>
+                    <option value="Serviços">Serviços</option>
+                    <option value="Hoteis">Hotéis e hospedagens</option>
+                    <option value="AtividadeArLivre">Atividades e recreação ao ar livre</option>
+                    <option value="Religiao">Religião</option>
+                </select>
+            </fieldset>
 
-          <li class="option"> 
-              <input
-              type="radio"
-              name="category"
-              value="hotel"
-              data-label="Hotéis e hospedagem"
-              >
-
-              <i data-lucide="bed"></i>
-              <span class="label">Hotéis e hospedagem</span>
-              <i data-lucide="check"></i>
-          </li>
-
-          <li class="option"> 
-              <input
-              type="radio"
-              name="category"
-              value="activity"
-              data-label="Atividades e recreação ao ar livre"
-              >
-
-              <i data-lucide="tree-pine"></i>
-              <span class="label">Atividades e recreação ao ar livre</span>
-              <i data-lucide="check"></i>
-          </li>
-
-          <li class="option"> 
-              <input
-              type="radio"
-              name="category"
-              value="religion"
-              data-label="Religião"
-              >
-
-              <i data-lucide="church"></i>
-              <span class="label">Religião</span>
-              <i data-lucide="check"></i>
-          </li>
-      </ul>
-  </div>
-  
-  <!-- Botão de Input - Resto do código do Maps -->
-  <gmpx-icon-button variant="filled">Cadastrar</gmpx-icon-button>
-</div>
-<gmp-map slot="main">
-  <gmp-advanced-marker></gmp-advanced-marker>
-</gmp-map>
-</gmpx-split-layout>
-
-
-  
-  <script src="https://unpkg.com/lucide@latest"></script>
-
-  <script>
-    lucide.createIcons();
-  </script>
-  <script src="index.js"></script>
-  </body>
+            <button type="button" class="voltar"><a href="index.html">Voltar pro menu</a></button> 
+            <button type="button" class="salvar" onclick="alert('Salvo')">Salvar</button>
+        </form>
+    </main>
+</body>
 </html>

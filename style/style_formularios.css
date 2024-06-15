@@ -21,7 +21,7 @@ header{
 
 .enda {
     font-size: 4em;
-    color: #FAFAFA;
+    color: var(--branco);
 }
 
 .logo__titulo {
@@ -33,12 +33,12 @@ header{
 
 body {
     margin: 2em;
-    color: var(--laranja);
-    background-color: #214245;
+    color: var(--branco);
+    background-color: var(--azul-escuro);
 }
 
 .titulo {
-    color: var(--laranja);
+    color: var(--branco);
     font-size: 2em;
     margin-bottom: 1em;
 }
@@ -62,7 +62,7 @@ form label{
 form fieldset{
     margin: 1.5em 0 0 0;
     padding: 1em;
-    border: 0.1em solid var(--azul);
+    border: 0.2em solid var(--azul);
 }
 
 form legend{
@@ -81,7 +81,7 @@ form legend{
 
 .input-padrao:placeholder-shown{
     display: block;
-    color: orangered;
+    color: var(--branco);
 }
 
 
@@ -134,7 +134,7 @@ form legend{
     cursor: pointer;
 }
 .enviar:hover{
-    background-color: orangered;
+    background-color: var(--laranja-escuro);
     transform: scale(1.05);
 }
 
@@ -150,7 +150,7 @@ form legend{
     margin: 1em 0 1.5em 0;
 }
 .salvar:hover{
-    background-color: orangered;
+    background-color: var(--laranja-escuro);
     transform: scale(1.05);
 }
 
@@ -167,6 +167,6 @@ form legend{
     margin: 25px 10px 0 10px;
 }
 .voltar:hover{
-    background-color: orangered;
+    background-color: var(--laranja-escuro);
     transform: scale(1.05);
 }

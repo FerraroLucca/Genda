@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-/* STYLE DO COMBOBOX */
-
+:root{
+    --branco:#FAFAFA;
+    --preto:#202020;
+    --laranja:#DF6F3E;
+    --laranja-escuro:#CF5E2C;
+    --azul:#215454;
+    --azul-escuro:#214245;
+}
 *{
     margin: 0;
     padding: 1%;
