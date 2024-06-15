@@ -70,6 +70,27 @@ form legend{
     font-weight: bold;
 }   
 
+.tabela{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.tabela__titulo {
+    font-size: 1.5em;
+}
+
+.tabela__campos{
+    font-size: 1em;
+}
+
+.tupla{
+    padding: 0.5rem;
+    border: solid 0.1em var(--branco);
+
+}
+
 .input-padrao{
     display: block;
     font-size: 1em;
@@ -123,7 +144,12 @@ form legend{
     margin: 0.5em; 
 }
 
-.enviar{
+.botoes__navegacao{
+    display: flex;
+    justify-content: space-between;
+}
+
+.salvar{
     color: black;
     width: 40%;
     padding: 20px;
@@ -131,23 +157,9 @@ form legend{
     border-radius: 10px ;
     font-weight: bold;
     font-size: 15px;
+    text-decoration: none;
     cursor: pointer;
-}
-.enviar:hover{
-    background-color: var(--laranja-escuro);
-    transform: scale(1.05);
-}
-
-.salvar{
-    color: black;
-    width: 25%;
-    padding: 20px;
-    border: none;
-    border-radius: 10px ;
-    font-weight: bold;
-    font-size: 15px;
-    cursor: pointer;
-    margin: 1em 0 1.5em 0;
+    margin: 2em 1em 0 1em;
 }
 .salvar:hover{
     background-color: var(--laranja-escuro);
@@ -156,7 +168,7 @@ form legend{
 
 .voltar{
     color: black;
-    width: 25%;
+    width: 40%;
     padding: 20px;
     border: none;
     border-radius: 10px ;
@@ -164,9 +176,10 @@ form legend{
     font-size: 15px;
     text-decoration: none;
     cursor: pointer;
-    margin: 25px 10px 0 10px;
+    margin: 2em 1em 0 1em;
 }
 .voltar:hover{
     background-color: var(--laranja-escuro);
     transform: scale(1.05);
 }
+
