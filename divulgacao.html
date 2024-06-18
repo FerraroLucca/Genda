@@ -3,78 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produto Genérico</title>
+    <title>Divulgação Genda</title>
+    <link rel="stylesheet" href="style/style_divulgacao.css">
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Minha Empresa</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Produtos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
     <!-- Header -->
-    <header class="jumbotron text-center">
-        <h1 class="display-4">Produto Genérico</h1>
-        <p class="lead">Uma solução incrível para todas as suas necessidades</p>
-        <a href="#" class="btn btn-primary btn-lg">Saiba Mais</a>
+    <header class="cabecalho text-center custom-bg-primary">
+        <img src="IMG/Genda-slogan.png" alt="Logo e Slogan Genda" class="logo">
+        <a href="index.html" id="btn"> Saiba Mais</a>
     </header>
 
     <!-- Main Content -->
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <h2>Características do Produto</h2>
+            <div class="col-md-6 ">
+                <h2>Características da Genda</h2>
                 <ul>
-                    <li>Alta qualidade</li>
-                    <li>Durável e confiável</li>
+                    <li>Facilita a gestão de compromissos diários e planejamento de eventos</li>
+                    <li>Integra-se perfeitamente com o e-mail do usuário</li>
+                    <li>Oferece uma integração fluida com aplicativos de mapas</li>
                     <li>Fácil de usar</li>
-                    <li>Preço acessível</li>
                 </ul>
             </div>
-            <div class="col-md-6">
-                <h2>Imagem do Produto</h2>
-                <img src="https://via.placeholder.com/400" class="img-fluid" alt="Imagem do Produto">
+            <div class="container-qrcode col-md-6">
+                <h2 class="text-center">Imagem do Produto</h2>
+                <img class="qrcode" src="IMG/QRCODE.png" class="img-fluid" alt="Imagem do Produto">
             </div>
         </div>
         <div class="row mt-5">
             <div class="col-md-12 text-center">
                 <h2>Depoimentos de Clientes</h2>
                 <blockquote class="blockquote">
-                    <p class="mb-0">Este produto mudou minha vida! Altamente recomendado.</p>
-                    <footer class="blockquote-footer">João Silva</footer>
+                    <p class="mb-0">A Genda mudou a forma como eu organizava meus eventos!</p>
+                    <p class="blockquote-footer">João Silva</p>
                 </blockquote>
                 <blockquote class="blockquote">
-                    <p class="mb-0">Excelente qualidade e preço justo. Estou muito satisfeito.</p>
-                    <footer class="blockquote-footer">Maria Souza</footer>
+                    <p class="mb-0">Aplicativo maravilhoso! usabilidade ótima!</p>
+                    <p class="blockquote-footer">Maria Souza</p>
                 </blockquote>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-light text-center py-4 mt-5">
-        <p>&copy; 2024 Minha Empresa. Todos os direitos reservados.</p>
+    <footer class="rodape text-center py-4 mt-5">
+        <p class="rodape__paragrafo">&copy; 2024 Genda. Todos os direitos reservados.</p>
     </footer>
 
     <!-- Bootstrap JS and dependencies -->

@@ -14,6 +14,10 @@ header{
     justify-content: space-between;
 }
 
+.btn {
+    background-color: var(--azul);
+}
+
 body{
     background-color: var(--branco);
     display: flex;
@@ -45,7 +49,7 @@ main {
 }
 
 .formulario__botoes {
-    font-size: 1em;
+    font-size: 0.8em;
     text-decoration: none;
     display: inline-block;
     margin: 1.5em;
@@ -79,13 +83,13 @@ footer {
 }
 
 .rodape__titulo {
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0.5em;
     color: var(--branco);
 }
 
 .rodape__nome{
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 .rodape__navegacao {

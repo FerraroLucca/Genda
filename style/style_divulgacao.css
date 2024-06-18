@@ -1,0 +1,52 @@
+:root{
+    --branco:#FAFAFA;
+    --preto:#202020;
+    --laranja:#DF6E2E;
+    --laranja-escuro:#CE5E2C;
+    --azul:#215454;
+    --azul-escuro:#214251;
+}
+
+.cabecalho {
+    background-color: var(--azul-escuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    width: 100%;
+}
+
+.logo {
+    text-align: center;
+    width: 20em;
+}
+
+#btn{
+    background-color: var(--laranja-escuro);
+    color: var(--branco);
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+
+.btn:hover {
+    background-color: white;
+}
+
+.container {
+    margin: 1em;
+}
+
+.container-qrcode {
+    text-align: center ;
+}
+
+.rodape{
+    background-color: var(--azul-escuro);
+}
+
+.rodape__paragrafo {
+    color: var(--laranja-escuro);
+}
