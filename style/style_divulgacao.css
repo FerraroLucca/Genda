@@ -17,6 +17,11 @@
     width: 100%;
 }
 
+.subtitulos{
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
 .logo {
     text-align: center;
     width: 20em;
@@ -35,10 +40,19 @@
 }
 
 .container {
+    text-align: center ;
     display: flex;
     flex-direction: column;
     margin: 1em;
 }
+
+.container-caracteristicas__lista {
+    list-style: none;
+}
+.container-caracteristicas__itens {
+    font-size: 1.5em;
+}
+
 
 .container-qrcode {
     text-align: center ;
