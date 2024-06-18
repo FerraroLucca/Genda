@@ -30,12 +30,13 @@
     font-size: 1.5rem;
 }
 
-
 .btn:hover {
     background-color: white;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     margin: 1em;
 }
 
